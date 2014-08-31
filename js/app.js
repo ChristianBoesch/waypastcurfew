@@ -44,6 +44,6 @@ function calenderController($scope){
 
 }
 
-function contactusController(scope){
+function contactusController($scope){
 
 }
