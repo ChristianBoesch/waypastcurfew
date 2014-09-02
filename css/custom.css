@@ -67,3 +67,8 @@ p.tourButton a:hover {
 #profile .heading span{float: right; width: 30%; font-family:trebuchet MS; font-size: 25px; line-height: 30px; 
     text-align: center}
 #profile .heading h2{float: left; width: 70%; font-family:trebuchet MS}
+
+
+@media only screen and (max-width: 800px) {
+#profile .heading span {display: none;}
+}
