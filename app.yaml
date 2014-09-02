@@ -1,0 +1,56 @@
+application: waypastcurfewsite
+
+version: 2
+runtime: python27
+api_version: 1
+threadsafe: false
+
+default_expiration: '365d'
+
+skip_files: |
+    ^(.*/)?(
+    (app\.yaml)|
+    (index\.yaml)| 
+    (index\.yaml)|
+    (\..*)|
+    (.*\.pyc)|
+    (.*\.bat)|
+    (.*\.psd)|
+    (Thumbs.db)|
+    (.*\.svn/.*)|
+    (.*\.lnk)|
+    (.*\.datastore)|
+    (_darcs/.*)|
+    (nbproject/.*)|
+    (.*\.swp)|
+    (.*\.log)|
+    )$
+
+builtins:
+- appstats: on
+- deferred: on
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+
+- url: /gui
+  static_dir: gui
+
+- url: /css
+  static_dir: css
+
+- url: /images
+  static_dir: images
+
+- url: /js
+  static_dir: js
+
+- url: /partials
+  static_dir: partials
+
