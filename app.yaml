@@ -1,6 +1,6 @@
 application: waypastcurfewsite
 
-version: 2
+version: autodeployed
 runtime: python27
 api_version: 1
 threadsafe: false
